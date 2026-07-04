@@ -25,7 +25,7 @@ export const certificates: Certificate[] = [
     title: "Microsoft Azure Data Fundamentals (DP-900)",
     issuer: "Microsoft",
     date: "June 2025",
-    imageUrl: "", // [TO ADD LATER]
+    imageUrl: "/azure-logo.jpg", // The Azure logo image is now here
     credentialUrl: "" // [TO ADD LATER]
   },
   {
