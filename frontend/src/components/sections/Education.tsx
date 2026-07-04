@@ -11,15 +11,17 @@ const eduData = [
   },
   {
     id: 2,
-    institution: "Class XII",
-    degree: "Higher Secondary",
+    institution: "SVGMS",
+    degree: "Class XII (Higher Secondary)",
+    board: "CBSE",
     score: "81%",
     year: "2023",
   },
   {
     id: 3,
-    institution: "Class X",
-    degree: "Secondary",
+    institution: "SVGMS",
+    degree: "Class X (Secondary)",
+    board: "CBSE",
     score: "93.60%",
     year: "2021",
   }
@@ -56,8 +58,13 @@ const Education = () => {
                 </div>
                 
                 {/* Content */}
-                <div className="ml-12 md:ml-0 md:w-1/2 md:px-8 glass p-6 rounded-2xl group hover:border-accent/30 transition-colors">
-                  <h3 className="text-xl font-bold text-white mb-1 group-hover:text-accent transition-colors">{edu.institution}</h3>
+                <div className="ml-12 md:ml-0 md:w-1/2 md:px-8 glass p-6 rounded-2xl group hover:border-accent/30 transition-colors relative">
+                  {edu.board && (
+                    <span className="absolute top-6 right-6 text-[10px] font-bold text-white/40 bg-white/5 border border-white/10 px-2 py-1 rounded-md tracking-widest uppercase">
+                      {edu.board}
+                    </span>
+                  )}
+                  <h3 className="text-xl font-bold text-white mb-1 group-hover:text-accent transition-colors pr-12">{edu.institution}</h3>
                   <p className="text-gray-300 font-medium mb-3">{edu.degree}</p>
                   
                   <div className="flex flex-wrap items-center gap-4 text-sm">
