@@ -65,8 +65,8 @@ export const experiences: Experience[] = [
     location: "Campus",
     description: "", // [TO ADD LATER]
     techStack: ["Event Management", "Teamwork"], // [TO ADD LATER]
-    lorUrl: "", // [TO ADD LATER]
-    certificateUrl: "" // [TO ADD LATER]
+    lorUrl: "/startup-club-lor.pdf", // Add your Letter of Recommendation PDF to frontend/public/startup-club-lor.pdf
+    certificateUrl: "/startup-club-certificate.pdf" // Add your Certificate of Appreciation PDF to frontend/public/startup-club-certificate.pdf
   },
   {
     id: "gssoc",
