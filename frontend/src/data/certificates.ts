@@ -26,8 +26,9 @@ export const certificates: Certificate[] = [
     issuer: "Microsoft",
     date: "June 2025",
     imageUrl: "/azure-logo.jpg", // The Azure logo image is now here
-    credentialUrl: "", // Add your Azure verification link here if you have one
-    certificateUrl: "/azure-certificate.pdf" // Add your Azure certificate PDF to frontend/public/azure-certificate.pdf
+    credentialUrl: "https://verify.certiport.com", // Add your Azure verification link here if you have one
+    certificateUrl: "/azure-certificate.pdf", // Add your Azure certificate PDF to frontend/public/azure-certificate.pdf
+    credentialId: "CBSw-DwWh"
   },
   {
     id: "nptel-ml",
