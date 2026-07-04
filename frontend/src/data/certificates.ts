@@ -30,7 +30,7 @@ export const certificates: Certificate[] = [
     title: "Introduction to Machine Learning",
     issuer: "NPTEL",
     date: "April 2025",
-    imageUrl: "", // [TO ADD LATER]
+    imageUrl: "/nptel-logo.jpg", // Add the NPTEL logo image to frontend/public/nptel-logo.jpg
     credentialUrl: "https://archive.nptel.ac.in/noc/B2C/candidate_login/candidate_scores.php?courseid=noc25-cs46",
     certificateUrl: "/nptel-certificate.pdf" // Assuming the file will be named nptel-certificate.pdf and placed in the public folder
   }
