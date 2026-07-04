@@ -39,19 +39,32 @@ const Certificates = () => {
                 <h3 className="text-lg font-bold text-white mb-2 leading-snug">{cert.title}</h3>
                 <p className="text-sm text-gray-500 mb-6 flex-1">{cert.date}</p>
                 
-                <a 
-                  href={cert.credentialUrl || '#'} 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className={`inline-flex items-center justify-center gap-2 w-full py-2.5 rounded-lg text-sm font-medium transition-all ${
-                    cert.credentialUrl 
-                      ? 'bg-secondary/10 hover:bg-secondary/20 text-secondary border border-secondary/20 hover:border-secondary/40' 
-                      : 'bg-white/5 text-gray-500 border border-white/10 cursor-not-allowed'
-                  }`}
-                  onClick={(e) => !cert.credentialUrl && e.preventDefault()}
-                >
-                  View Credential <ExternalLink size={14} />
-                </a>
+                <div className="flex flex-col gap-3 mt-4">
+                  <a 
+                    href={cert.credentialUrl || '#'} 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className={`inline-flex items-center justify-center gap-2 w-full py-2.5 rounded-lg text-sm font-medium transition-all ${
+                      cert.credentialUrl 
+                        ? 'bg-secondary/10 hover:bg-secondary/20 text-secondary border border-secondary/20 hover:border-secondary/40' 
+                        : 'bg-white/5 text-gray-500 border border-white/10 cursor-not-allowed'
+                    }`}
+                    onClick={(e) => !cert.credentialUrl && e.preventDefault()}
+                  >
+                    View Credential <ExternalLink size={14} />
+                  </a>
+                  
+                  {cert.certificateUrl && (
+                    <a 
+                      href={cert.certificateUrl} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center justify-center gap-2 w-full py-2.5 rounded-lg text-sm font-medium transition-all bg-primary/10 hover:bg-primary/20 text-primary border border-primary/20 hover:border-primary/40"
+                    >
+                      View Certificate (PDF) <ExternalLink size={14} />
+                    </a>
+                  )}
+                </div>
               </div>
             </motion.div>
           ))}

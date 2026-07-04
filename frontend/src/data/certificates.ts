@@ -5,6 +5,7 @@ export interface Certificate {
   date: string;
   imageUrl: string; 
   credentialUrl: string;
+  certificateUrl?: string;
 }
 
 export const certificates: Certificate[] = [
@@ -30,6 +31,7 @@ export const certificates: Certificate[] = [
     issuer: "NPTEL",
     date: "April 2025",
     imageUrl: "", // [TO ADD LATER]
-    credentialUrl: "https://archive.nptel.ac.in/noc/B2C/candidate_login/candidate_scores.php?courseid=noc25-cs46"
+    credentialUrl: "https://archive.nptel.ac.in/noc/B2C/candidate_login/candidate_scores.php?courseid=noc25-cs46",
+    certificateUrl: "/nptel-certificate.pdf" // Assuming the file will be named nptel-certificate.pdf and placed in the public folder
   }
 ];
