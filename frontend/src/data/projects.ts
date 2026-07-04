@@ -86,14 +86,14 @@ export const projects: Project[] = [
     screenshots: [] // [TO ADD LATER]
   },
   {
-    id: "station-saarthi",
-    title: "Station Saarthi",
+    id: "station-guide",
+    title: "Station Guide",
     category: "Web Application",
     shortDescription: "Railway navigation assistant using Google Maps API.",
-    coverImage: "", // [TO ADD LATER]
+    coverImage: "/station-guide-preview.png", // Add your Station Guide preview image to frontend/public/station-guide-preview.png
     techStack: ["Google Maps API", "React", "Node.js"],
-    githubUrl: "",
-    liveUrl: "",
+    githubUrl: "https://github.com/Mehtarishita/StationGuide",
+    liveUrl: "https://stationguide.onrender.com/",
     overview: "", // [TO ADD LATER]
     problemStatement: "", // [TO ADD LATER]
     solution: "", // [TO ADD LATER]
