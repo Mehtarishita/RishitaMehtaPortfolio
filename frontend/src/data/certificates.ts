@@ -15,7 +15,7 @@ export const certificates: Certificate[] = [
     title: "Ethnus MERN Full Stack",
     issuer: "Ethnus",
     date: "July 2025",
-    imageUrl: "/ethnus-logo.jpg", // Add the Ethnus logo image to frontend/public/ethnus-logo.jpg
+    imageUrl: "/ethnus-logo.png", // Add the Ethnus logo image to frontend/public/ethnus-logo.png
     credentialUrl: "https://ethnus.com/certverify",
     certificateUrl: "/ethnus-certificate.pdf", // Add your Ethnus certificate PDF to frontend/public/ethnus-certificate.pdf
     credentialId: "W5C73WG7"
