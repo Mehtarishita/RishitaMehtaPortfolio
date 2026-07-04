@@ -105,9 +105,9 @@ export const projects: Project[] = [
     id: "stylemeup",
     title: "StyleMeUp (ongoing)",
     category: "Web Application",
-    shortDescription: "An ongoing web application project currently in development.",
+    shortDescription: "AI-powered fashion styling platform delivering personalized outfit recommendations based on user preferences and fashion trends.",
     coverImage: "/stylemeup-preview.png", // Add your StyleMeUp preview image to frontend/public/stylemeup-preview.png
-    techStack: ["React", "Node.js"], 
+    techStack: ["HTML5", "CSS3", "JavaScript", "AI"],
     githubUrl: "https://github.com/Mehtarishita/StyleMeUp",
     liveUrl: "https://style-me-up.vercel.app/",
     overview: "", // [TO ADD LATER]
