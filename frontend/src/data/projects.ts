@@ -22,10 +22,10 @@ export const projects: Project[] = [
     title: "VASUDHA",
     category: "Blockchain + AI",
     shortDescription: "Smart India Hackathon 2025 project. Blockchain + AI solution for a Government problem statement. National Runner-Up.",
-    coverImage: "", // [TO ADD LATER]
+    coverImage: "/vasudha-preview.png", // Add your Vasudha preview image (like the one you uploaded) to frontend/public/vasudha-preview.png
     techStack: ["React", "Node.js", "Blockchain", "AI"],
-    githubUrl: "",
-    liveUrl: "",
+    githubUrl: "https://github.com/Mehtarishita/Vasudha",
+    liveUrl: "https://www.vasudha-dahd.app/",
     overview: "", // [TO ADD LATER]
     problemStatement: "", // [TO ADD LATER]
     solution: "", // [TO ADD LATER]
