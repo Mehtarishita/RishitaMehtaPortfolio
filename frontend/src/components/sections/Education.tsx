@@ -7,21 +7,21 @@ const eduData = [
     institution: "VIT Bhopal University",
     degree: "B.Tech, Computer Science & Engineering",
     score: "CGPA: 8.81/10",
-    year: "Expected 2026",
+    year: "2023 – 2027",
   },
   {
     id: 2,
     institution: "Class XII",
     degree: "Higher Secondary",
     score: "81%",
-    year: "Completed",
+    year: "2023",
   },
   {
     id: 3,
     institution: "Class X",
     degree: "Secondary",
     score: "93.60%",
-    year: "Completed",
+    year: "2021",
   }
 ];
 
