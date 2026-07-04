@@ -34,9 +34,13 @@ const Hero = () => {
           className="w-32 h-32 md:w-40 md:h-40 rounded-full border-2 border-primary/50 p-1 relative group"
         >
           <div className="absolute inset-0 rounded-full bg-primary/20 blur-xl group-hover:bg-primary/40 transition-colors"></div>
-          {/* [TO ADD LATER — leave a clean circular/rounded placeholder with soft glow ring] */}
+          {/* Add your profile picture to frontend/public/profile.png */}
           <div className="w-full h-full rounded-full bg-white/5 backdrop-blur-sm flex items-center justify-center overflow-hidden border border-white/10 relative z-10">
-             <span className="text-4xl text-gray-500">Photo</span>
+             <img 
+               src="/profile.png" 
+               alt="Rishita Mehta" 
+               className="w-full h-full object-cover"
+             />
           </div>
         </motion.div>
 
