@@ -110,7 +110,7 @@ const Projects = () => {
                         window.open(project.githubUrl, '_blank');
                       }}
                     >
-                      <FaGithub size={14} className="mr-1.5" /> Code
+                      <FaGithub size={14} className="mr-1.5" /> GitHub Repo
                     </Button>
                   )}
                   {project.liveUrl && (
