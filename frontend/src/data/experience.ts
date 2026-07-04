@@ -82,10 +82,10 @@ export const experiences: Experience[] = [
     id: "devplex",
     role: "SDE Intern",
     organization: "DevPlex",
-    duration: "", // [TO ADD LATER]
+    duration: "Nov 2025 – Feb 2026",
     type: "Internship",
-    location: "", // [TO ADD LATER]
-    description: "", // [TO ADD LATER]
+    location: "Remote",
+    description: "Built and optimized production-facing frontend features. Collaborated with stakeholders to deploy improvements and contributed to workflow enhancements within cross-functional strategic initiatives.",
     techStack: [], // [TO ADD LATER]
     certificateUrl: "/devplex-certificate.pdf" // Add your DevPlex certificate PDF to frontend/public/devplex-certificate.pdf
   }
