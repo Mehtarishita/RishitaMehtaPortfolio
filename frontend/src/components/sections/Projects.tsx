@@ -100,9 +100,32 @@ const Projects = () => {
                 </div>
 
                 <div className="flex items-center gap-3">
-                  <Button variant="secondary" size="sm" className="w-full text-xs">
-                    View Case Study
-                  </Button>
+                  {project.githubUrl && (
+                    <Button 
+                      variant="outline" 
+                      size="sm" 
+                      className="flex-1 text-xs"
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        window.open(project.githubUrl, '_blank');
+                      }}
+                    >
+                      <FaGithub size={14} className="mr-1.5" /> Code
+                    </Button>
+                  )}
+                  {project.liveUrl && (
+                    <Button 
+                      variant="primary" 
+                      size="sm" 
+                      className="flex-1 text-xs"
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        window.open(project.liveUrl, '_blank');
+                      }}
+                    >
+                      <ExternalLink size={14} className="mr-1.5" /> Live Demo
+                    </Button>
+                  )}
                 </div>
               </div>
             </motion.div>
