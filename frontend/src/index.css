@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 230 47% 5%; /* #050816 in HSL */
+    --foreground: 210 40% 98%;
+    
+    --primary: 262 83% 58%; /* #7C3AED */
+    --secondary: 221 83% 53%; /* #2563EB */
+    --accent: 188 86% 53%; /* #22D3EE */
+    
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-white/10;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-background text-foreground font-sans overflow-x-hidden antialiased;
+  }
+}
+
+/* Custom Scrollbar for a premium feel */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #050816;
+}
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #334155;
+}
+
+/* Glassmorphism utilities */
+.glass {
+  @apply bg-white/[0.03] backdrop-blur-lg border border-white/[0.05] shadow-[0_4px_30px_rgba(0,0,0,0.1)];
+}
+.glass-panel {
+  @apply bg-[#0f172a]/40 backdrop-blur-md border border-white/10;
+}
+
+/* Glowing text utility */
+.text-glow {
+  text-shadow: 0 0 20px rgba(34, 211, 238, 0.5);
+}
+
+.text-gradient {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-primary via-secondary to-accent;
+}
