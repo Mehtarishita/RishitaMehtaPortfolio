@@ -100,6 +100,22 @@ export const projects: Project[] = [
     keyFeatures: [], // [TO ADD LATER]
     challenges: "", // [TO ADD LATER]
     learnings: "", // [TO ADD LATER]
+  },
+  {
+    id: "stylemeup",
+    title: "StyleMeUp (ongoing)",
+    category: "Web Application",
+    shortDescription: "An ongoing web application project currently in development.",
+    coverImage: "/stylemeup-preview.png", // Add your StyleMeUp preview image to frontend/public/stylemeup-preview.png
+    techStack: ["React", "Node.js"], 
+    githubUrl: "https://github.com/Mehtarishita/StyleMeUp",
+    liveUrl: "https://style-me-up.vercel.app/",
+    overview: "", // [TO ADD LATER]
+    problemStatement: "", // [TO ADD LATER]
+    solution: "", // [TO ADD LATER]
+    keyFeatures: [], // [TO ADD LATER]
+    challenges: "", // [TO ADD LATER]
+    learnings: "", // [TO ADD LATER]
     screenshots: [] // [TO ADD LATER]
   }
 ];
