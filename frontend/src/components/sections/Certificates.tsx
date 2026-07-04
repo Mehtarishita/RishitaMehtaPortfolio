@@ -27,7 +27,7 @@ const Certificates = () => {
               <div className="h-40 bg-white/5 border-b border-white/10 flex items-center justify-center p-6 relative overflow-hidden">
                 <FileBadge size={48} className="text-gray-600 group-hover:scale-110 transition-transform duration-500" />
                 {cert.imageUrl && (
-                  <img src={cert.imageUrl} alt={cert.title} className="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-300" />
+                  <img src={cert.imageUrl} alt={cert.title} className="absolute inset-0 w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-300" />
                 )}
                 <div className="absolute top-0 right-0 p-3 opacity-10 group-hover:opacity-20 transition-opacity">
                   <FileBadge size={80} className="text-secondary" />
