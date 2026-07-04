@@ -39,10 +39,10 @@ export const projects: Project[] = [
     title: "Samvidhan Path",
     category: "Full-stack web platform",
     shortDescription: "Interactive web platform for learning and exploring the constitution.",
-    coverImage: "", // [TO ADD LATER]
+    coverImage: "/samvidhan-path-preview.png", // Add your Samvidhan Path preview image to frontend/public/samvidhan-path-preview.png
     techStack: ["React", "Node.js", "MongoDB", "Express"],
-    githubUrl: "",
-    liveUrl: "",
+    githubUrl: "https://github.com/Mehtarishita/Samvidhan-Path",
+    liveUrl: "https://samvidhan-path.vercel.app/",
     overview: "", // [TO ADD LATER]
     problemStatement: "", // [TO ADD LATER]
     solution: "", // [TO ADD LATER]
