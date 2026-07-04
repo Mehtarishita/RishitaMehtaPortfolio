@@ -56,9 +56,9 @@ export const projects: Project[] = [
     title: "Smart Traffic Lane Prioritization",
     category: "Computer Vision",
     shortDescription: "AI-driven, real-time computer vision system for dynamic lane prioritization at traffic intersections (Published Patent).",
-    coverImage: "", // [TO ADD LATER]
+    coverImage: "/smart-traffic-preview.png", // Add your Smart Traffic preview image to frontend/public/smart-traffic-preview.png
     techStack: ["TensorFlow", "OpenCV", "Flask", "React", "Computer Vision"],
-    githubUrl: "",
+    githubUrl: "https://github.com/Mehtarishita/SmartFlow-Traffic-System",
     liveUrl: "",
     overview: "", // [TO ADD LATER]
     problemStatement: "", // [TO ADD LATER]
