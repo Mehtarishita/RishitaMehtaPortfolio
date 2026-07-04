@@ -86,7 +86,8 @@ export const experiences: Experience[] = [
     type: "Internship",
     location: "", // [TO ADD LATER]
     description: "", // [TO ADD LATER]
-    techStack: [] // [TO ADD LATER]
+    techStack: [], // [TO ADD LATER]
+    certificateUrl: "/devplex-certificate.pdf" // Add your DevPlex certificate PDF to frontend/public/devplex-certificate.pdf
   }
 ];
 
