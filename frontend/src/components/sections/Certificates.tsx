@@ -40,6 +40,11 @@ const Certificates = () => {
                 <p className="text-sm text-gray-500 mb-6 flex-1">{cert.date}</p>
                 
                 <div className="flex flex-col gap-3 mt-4">
+                  {cert.credentialId && (
+                    <div className="text-right text-xs text-gray-400 -mb-1">
+                      Code: <span className="font-mono text-gray-300 tracking-wider">{cert.credentialId}</span>
+                    </div>
+                  )}
                   <a 
                     href={cert.credentialUrl || '#'} 
                     target="_blank" 

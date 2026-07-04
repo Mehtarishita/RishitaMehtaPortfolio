@@ -6,6 +6,7 @@ export interface Certificate {
   imageUrl: string; 
   credentialUrl: string;
   certificateUrl?: string;
+  credentialId?: string;
 }
 
 export const certificates: Certificate[] = [
@@ -16,7 +17,8 @@ export const certificates: Certificate[] = [
     date: "July 2025",
     imageUrl: "/ethnus-logo.jpg", // Add the Ethnus logo image to frontend/public/ethnus-logo.jpg
     credentialUrl: "https://ethnus.com/certverify",
-    certificateUrl: "/ethnus-certificate.pdf" // Add your Ethnus certificate PDF to frontend/public/ethnus-certificate.pdf
+    certificateUrl: "/ethnus-certificate.pdf", // Add your Ethnus certificate PDF to frontend/public/ethnus-certificate.pdf
+    credentialId: "W5C73WG7"
   },
   {
     id: "azure-dp900",
