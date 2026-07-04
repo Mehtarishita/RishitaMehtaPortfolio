@@ -30,6 +30,6 @@ export const certificates: Certificate[] = [
     issuer: "NPTEL",
     date: "April 2025",
     imageUrl: "", // [TO ADD LATER]
-    credentialUrl: "" // [TO ADD LATER]
+    credentialUrl: "https://archive.nptel.ac.in/noc/B2C/candidate_login/candidate_scores.php?courseid=noc25-cs46"
   }
 ];
