@@ -50,8 +50,8 @@ function App() {
         <Skills />
         <Projects />
         <Experience />
-        <Education />
         <Certificates />
+        <Education />
         <CodingProfiles />
         <Contact />
       </main>
