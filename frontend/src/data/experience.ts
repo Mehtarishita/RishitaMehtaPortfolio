@@ -55,8 +55,8 @@ export const experiences: Experience[] = [
     location: "Campus",
     description: "", // [TO ADD LATER]
     techStack: ["Leadership", "Community Management"], // [TO ADD LATER]
-    promotionUrl: "/blockchain-promotion.png", // Add your Letter of Promotion to frontend/public/blockchain-promotion.png
-    appreciationUrl: "/blockchain-appreciation.png", // Add your Letter of Appreciation to frontend/public/blockchain-appreciation.png
+    promotionUrl: "/blockchain-promotion.pdf", // Add your Letter of Promotion to frontend/public/blockchain-promotion.pdf
+    appreciationUrl: "/blockchain-appreciation.pdf", // Add your Letter of Appreciation to frontend/public/blockchain-appreciation.pdf
     lorUrl: "", // [TO ADD LATER]
     certificateUrl: "" // [TO ADD LATER]
   },
