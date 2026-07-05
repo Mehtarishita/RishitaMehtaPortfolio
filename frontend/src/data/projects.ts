@@ -73,7 +73,7 @@ export const projects: Project[] = [
     title: "WasteSort AI",
     category: "AI/ML",
     shortDescription: "Computer Vision waste classification using YOLO.",
-    coverImage: "", // [TO ADD LATER]
+    coverImage: "/waste-sort-ai-preview.png", // Add your WasteSort AI preview image to frontend/public/waste-sort-ai-preview.png
     techStack: ["YOLO", "Flask", "Streamlit", "Computer Vision"],
     githubUrl: "",
     liveUrl: "",
