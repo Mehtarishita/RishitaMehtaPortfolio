@@ -1,7 +1,11 @@
+import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Award, Trophy, Code, FileBadge, CheckCircle2, ExternalLink } from 'lucide-react';
+import { Award, Trophy, Code, FileBadge, CheckCircle2, ExternalLink, BookOpen } from 'lucide-react';
+import VasudhaCaseStudy from './VasudhaCaseStudy';
 
 const Achievements = () => {
+  const [isVasudhaOpen, setIsVasudhaOpen] = useState(false);
+
   return (
     <section id="achievements" className="py-20 relative">
       <div className="container mx-auto px-4 md:px-8">
@@ -61,6 +65,13 @@ const Achievements = () => {
                   <Award size={16} />
                   View Certificate
                 </a>
+                <button 
+                  onClick={() => setIsVasudhaOpen(true)}
+                  className="inline-flex items-center gap-2 px-4 py-2 bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 rounded-lg transition-colors font-medium text-sm"
+                >
+                  <BookOpen size={16} />
+                  Read Case Study
+                </button>
               </div>
             </div>
           </motion.div>
@@ -130,6 +141,7 @@ const Achievements = () => {
         </div>
 
       </div>
+      <VasudhaCaseStudy isOpen={isVasudhaOpen} onClose={() => setIsVasudhaOpen(false)} />
     </section>
   );
 };

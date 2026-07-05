@@ -29,7 +29,7 @@ const Projects = () => {
         <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-6 mb-12">
           <div>
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 inline-block relative">
-              Projects & Case Studies
+              Projects
               <span className="absolute -bottom-2 left-0 w-2/3 h-1 bg-gradient-to-r from-primary to-transparent rounded-full"></span>
             </h2>
             <p className="text-gray-400 max-w-xl">Deep dives into the problems I've solved, the architecture I designed, and the products I've built.</p>
