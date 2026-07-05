@@ -24,14 +24,20 @@ const Achievements = () => {
             </div>
             
             <div className="relative z-10">
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-secondary/20 text-secondary text-sm font-medium mb-6 border border-secondary/30">
-                <Trophy size={16} />
-                National Runner-Up / Grand Finalist
+              <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-2">
+                <div>
+                  <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-secondary/20 text-secondary text-sm font-medium mb-4 border border-secondary/30">
+                    <Trophy size={16} />
+                    National Runner-Up / Grand Finalist
+                  </div>
+                  <h3 className="text-2xl md:text-3xl font-bold text-white leading-tight">
+                    Smart India Hackathon 2025
+                  </h3>
+                </div>
+                <div className="w-16 h-16 bg-white/5 rounded-xl border border-white/10 p-1.5 flex items-center justify-center shrink-0 shadow-lg hidden sm:flex">
+                  <img src="/vasudha-logo.png" alt="VASUDHA Logo" className="max-w-full max-h-full object-contain" />
+                </div>
               </div>
-              
-              <h3 className="text-2xl md:text-3xl font-bold text-white mb-2 leading-tight">
-                Smart India Hackathon 2025
-              </h3>
               <p className="text-accent font-medium mb-6">Government Ministry Problem Statement</p>
               
               <p className="text-gray-300 leading-relaxed mb-8 max-w-lg">
