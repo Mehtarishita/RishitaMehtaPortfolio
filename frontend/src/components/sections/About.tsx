@@ -25,7 +25,7 @@ const About = () => {
                 I'm <strong className="text-white">Rishita Mehta</strong>, a final-year Computer Science and Engineering undergraduate at VIT Bhopal University with a CGPA of 8.81/10. I build scalable full-stack applications and AI-powered systems, with work recognized through a <strong className="text-primary">published Indian Patent</strong> and a <strong className="text-secondary">National Runner-Up finish at Smart India Hackathon 2025</strong>.
               </p>
               <p>
-                My focus areas are Java, full-stack web development, and applied AI/ML — with system design, cloud computing, and generative AI as my current areas of deep-dive learning.
+                My focus areas are Java, full-stack web development, and applied AI/ML with system design, cloud computing, and generative AI as my current areas of deep-dive learning.
               </p>
               <p>
                 Beyond code, I represented my state twice each in Chess and Hockey, which shaped the discipline and strategic thinking I bring to engineering problems.
@@ -36,7 +36,7 @@ const About = () => {
               <div>
                 <h3 className="text-xl font-semibold text-white mb-3">Career Objective</h3>
                 <p className="italic text-gray-400 bg-white/5 p-4 rounded-xl border border-white/10">
-                  Seeking a Software Engineering role where I can apply my full-stack development and AI/ML foundations to build real, scalable products — while growing into system design, cloud infrastructure, and large-scale engineering practices.
+                  Seeking a Software Engineering role where I can apply my full-stack development and AI/ML foundations to build real, scalable products while growing into system design, cloud infrastructure, and large-scale engineering practices.
                 </p>
               </div>
             </div>
