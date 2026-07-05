@@ -18,12 +18,12 @@ export const experiences: Experience[] = [
     id: "aiexecute",
     role: "Business Development / AI Executive",
     organization: "AIExecute Labs",
-    duration: "Present",
+    duration: "Jan 2026 – May 2026",
     type: "Internship",
     location: "Remote",
-    description: "", // [TO ADD LATER]
-    techStack: [], // [TO ADD LATER]
-    certificateUrl: "", // [TO ADD LATER]
+    description: "Contributed significantly to business development, strategic planning, and growth initiatives. Applied theoretical knowledge to real-world business challenges and collaborated with the founding team.",
+    techStack: ["Business Development", "Strategic Planning", "Leadership"],
+    certificateUrl: "/aiexecute-certificate.pdf", // Add your AIExecute certificate to frontend/public/aiexecute-certificate.pdf
     lorUrl: "" // [TO ADD LATER]
   },
   {
@@ -48,9 +48,9 @@ export const experiences: Experience[] = [
   },
   {
     id: "blockchain-club",
-    role: "Social Team Lead",
-    organization: "Blockchain Club",
-    duration: "", // [TO ADD LATER]
+    role: "Social Media Lead (Prev: Core Member)",
+    organization: "Blockchain Club VITB",
+    duration: "Jul 2024 – Present",
     type: "Leadership",
     location: "Campus",
     description: "", // [TO ADD LATER]
@@ -63,8 +63,8 @@ export const experiences: Experience[] = [
   {
     id: "startup-club",
     role: "Core Member, Event Management",
-    organization: "Startup Club",
-    duration: "", // [TO ADD LATER]
+    organization: "Startup Club - VIT Bhopal University",
+    duration: "Aug 2024 – Jun 2025",
     type: "Leadership",
     location: "Campus",
     description: "", // [TO ADD LATER]
@@ -97,11 +97,15 @@ export const experiences: Experience[] = [
 
 export const leadershipAndSports = [
   {
-    title: "2× State-Level Chess Player",
-    certificateUrl: "" // [TO ADD LATER]
+    title: "2× State-Level Hockey Player"
   },
   {
-    title: "2× State-Level Hockey Player",
-    certificateUrl: "" // [TO ADD LATER]
+    title: "2× State-Level Chess Player"
+  },
+  {
+    title: "Combined Sports Certificates",
+    tags: ["Teamwork", "Discipline"],
+    certificateUrl: "/sports-certificates.pdf", // Add your combined sports certificates PDF to frontend/public/sports-certificates.pdf
+    highlight: true
   }
 ];
