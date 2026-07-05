@@ -98,7 +98,7 @@ const Achievements = () => {
                   </h3>
                 </div>
                 <div className="h-24 sm:h-32 w-56 sm:w-72 bg-white rounded-xl border border-white/10 p-2 flex items-center justify-center shrink-0 shadow-lg hidden sm:flex overflow-hidden">
-                  <img src="/patent-logo.png" alt="Patent Logo" className="w-full h-full object-contain" />
+                  <img src="/patent-logo.jpg" alt="Patent Logo" className="w-full h-full object-contain" />
                 </div>
               </div>
               <p className="text-accent font-medium mb-6 mt-2">Indian Patent Office · Government of India</p>
