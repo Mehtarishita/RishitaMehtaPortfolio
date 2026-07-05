@@ -9,6 +9,8 @@ export interface Experience {
   techStack: string[];
   certificateUrl?: string;
   lorUrl?: string;
+  promotionUrl?: string;
+  appreciationUrl?: string;
 }
 
 export const experiences: Experience[] = [
@@ -53,6 +55,8 @@ export const experiences: Experience[] = [
     location: "Campus",
     description: "", // [TO ADD LATER]
     techStack: ["Leadership", "Community Management"], // [TO ADD LATER]
+    promotionUrl: "/blockchain-promotion.png", // Add your Letter of Promotion to frontend/public/blockchain-promotion.png
+    appreciationUrl: "/blockchain-appreciation.png", // Add your Letter of Appreciation to frontend/public/blockchain-appreciation.png
     lorUrl: "", // [TO ADD LATER]
     certificateUrl: "" // [TO ADD LATER]
   },

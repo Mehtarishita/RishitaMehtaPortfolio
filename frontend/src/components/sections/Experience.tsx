@@ -59,8 +59,8 @@ const Experience = () => {
                       ))}
                     </div>
 
-                    {(exp.certificateUrl || exp.lorUrl) && (
-                      <div className="flex gap-3 pt-4 border-t border-white/10">
+                    {(exp.certificateUrl || exp.lorUrl || exp.promotionUrl || exp.appreciationUrl) && (
+                      <div className="flex gap-3 pt-4 border-t border-white/10 flex-wrap">
                         {exp.certificateUrl && (
                           <a href={exp.certificateUrl} target="_blank" rel="noopener noreferrer" className="text-xs font-medium text-primary hover:text-accent transition-colors flex items-center gap-1">
                             Certificate <ExternalLink size={12} />
@@ -69,6 +69,16 @@ const Experience = () => {
                         {exp.lorUrl && (
                           <a href={exp.lorUrl} target="_blank" rel="noopener noreferrer" className="text-xs font-medium text-secondary hover:text-accent transition-colors flex items-center gap-1">
                             Letter of Recommendation <ExternalLink size={12} />
+                          </a>
+                        )}
+                        {exp.promotionUrl && (
+                          <a href={exp.promotionUrl} target="_blank" rel="noopener noreferrer" className="text-xs font-medium text-emerald-400 hover:text-white transition-colors flex items-center gap-1">
+                            Letter of Promotion <ExternalLink size={12} />
+                          </a>
+                        )}
+                        {exp.appreciationUrl && (
+                          <a href={exp.appreciationUrl} target="_blank" rel="noopener noreferrer" className="text-xs font-medium text-purple-400 hover:text-white transition-colors flex items-center gap-1">
+                            Letter of Appreciation <ExternalLink size={12} />
                           </a>
                         )}
                       </div>
