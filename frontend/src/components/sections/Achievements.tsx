@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Award, Trophy, Code, FileBadge, CheckCircle2, ExternalLink, BookOpen } from 'lucide-react';
+import { Award, Trophy, FileBadge, CheckCircle2, ExternalLink, BookOpen } from 'lucide-react';
 import VasudhaCaseStudy from './VasudhaCaseStudy';
 
 const Achievements = () => {

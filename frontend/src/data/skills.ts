@@ -18,7 +18,6 @@ import {
 import { FaJava, FaCss3Alt } from 'react-icons/fa';
 import {
   Database,
-  Globe,
   Code,
   Cpu,
   Network,
@@ -28,7 +27,6 @@ import {
   Layout,
   Workflow,
   Server,
-  BookOpen,
 } from 'lucide-react';
 
 export interface Skill {

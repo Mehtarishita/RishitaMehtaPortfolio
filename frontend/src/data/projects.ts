@@ -100,6 +100,7 @@ export const projects: Project[] = [
     keyFeatures: [], // [TO ADD LATER]
     challenges: "", // [TO ADD LATER]
     learnings: "", // [TO ADD LATER]
+    screenshots: [] // [TO ADD LATER]
   },
   {
     id: "stylemeup",
