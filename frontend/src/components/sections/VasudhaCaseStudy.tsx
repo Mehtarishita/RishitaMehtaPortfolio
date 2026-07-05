@@ -14,9 +14,9 @@ const VasudhaCaseStudy: React.FC<VasudhaCaseStudyProps> = ({ isOpen, onClose }) 
         
         {/* Header with Logo */}
         <div className="flex flex-col md:flex-row gap-6 items-center md:items-start border-b border-white/10 pb-6">
-          <div className="w-24 h-24 bg-white/5 rounded-2xl border border-white/10 p-2 flex items-center justify-center shrink-0">
+          <div className="h-32 w-64 sm:w-96 bg-white/5 rounded-2xl border border-white/10 p-1 flex items-center justify-center shrink-0 overflow-hidden">
             {/* Logo Image Placeholder */}
-            <img src="/vasudha-logo.png" alt="VASUDHA Logo" className="max-w-full max-h-full object-contain" />
+            <img src="/vasudha-logo.png" alt="VASUDHA Logo" className="w-full h-full object-contain drop-shadow-md" />
           </div>
           <div>
             <h2 className="text-3xl font-bold text-white mb-2">VASUDHA</h2>
