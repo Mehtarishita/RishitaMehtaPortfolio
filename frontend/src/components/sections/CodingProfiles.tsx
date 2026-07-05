@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
-import { Code2, Terminal } from 'lucide-react';
 import { FaGithub } from 'react-icons/fa';
+import { SiLeetcode, SiGeeksforgeeks } from 'react-icons/si';
 
 const CodingProfiles = () => {
   const profiles = [
@@ -14,14 +14,14 @@ const CodingProfiles = () => {
     {
       name: "LeetCode",
       url: "https://leetcode.com/u/rishitaa_mehta/",
-      icon: <Code2 size={32} />,
+      icon: <SiLeetcode size={32} />,
       color: "group-hover:text-[#FFA116] group-hover:border-[#FFA116]",
       bgHover: "hover:bg-[#FFA116]/5"
     },
     {
       name: "GeeksforGeeks",
       url: "https://www.geeksforgeeks.org/profile/rishitamm033",
-      icon: <Terminal size={32} />,
+      icon: <SiGeeksforgeeks size={32} />,
       color: "group-hover:text-[#2F8D46] group-hover:border-[#2F8D46]",
       bgHover: "hover:bg-[#2F8D46]/5"
     }
