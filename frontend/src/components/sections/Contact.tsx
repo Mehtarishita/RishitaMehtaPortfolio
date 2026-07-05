@@ -102,6 +102,17 @@ const Contact = () => {
                   </a>
                 </div>
               </div>
+              
+              <div className="mt-8 pt-8 border-t border-white/10">
+                <a 
+                  href="/resume.pdf" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="w-full px-4 py-3 rounded-lg bg-white/10 hover:bg-white/20 text-white font-medium border border-white/20 transition-all flex items-center justify-center hover:shadow-[0_0_15px_rgba(255,255,255,0.1)]"
+                >
+                  Download Resume
+                </a>
+              </div>
             </motion.div>
           </div>
 
@@ -176,9 +187,11 @@ const Contact = () => {
                 {errors.message && <p className="text-red-400 text-xs mt-1">{errors.message.message}</p>}
               </div>
 
-              <Button type="submit" disabled={status === 'loading'} className="w-full md:w-auto" variant="primary" size="lg">
+              <Button type="submit" disabled={status === 'loading' || status === 'success'} className="w-full md:w-auto" variant={status === 'success' ? 'secondary' : 'primary'} size="lg">
                 {status === 'loading' ? (
                   <><Loader2 size={18} className="mr-2 animate-spin" /> Sending...</>
+                ) : status === 'success' ? (
+                  <><CheckCircle size={18} className="mr-2" /> Message Sent!</>
                 ) : (
                   <><Send size={18} className="mr-2" /> Send Message</>
                 )}
