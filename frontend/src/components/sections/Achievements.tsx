@@ -19,10 +19,6 @@ const Achievements = () => {
             transition={{ duration: 0.6 }}
             className="flex-1 glass-panel rounded-2xl p-8 md:p-10 relative overflow-hidden group hover:border-secondary/50 transition-colors"
           >
-            <div className="absolute top-0 right-0 p-8 opacity-10 group-hover:opacity-20 transition-opacity">
-              <Trophy size={120} className="text-secondary" />
-            </div>
-            
             <div className="relative z-10">
               <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-2">
                 <div>
@@ -34,8 +30,8 @@ const Achievements = () => {
                     Smart India Hackathon 2025
                   </h3>
                 </div>
-                <div className="w-16 h-16 bg-white/5 rounded-xl border border-white/10 p-1.5 flex items-center justify-center shrink-0 shadow-lg hidden sm:flex">
-                  <img src="/vasudha-logo.png" alt="VASUDHA Logo" className="max-w-full max-h-full object-contain" />
+                <div className="h-24 sm:h-32 w-56 sm:w-72 bg-white rounded-xl border border-white/10 p-2 flex items-center justify-center shrink-0 shadow-lg hidden sm:flex overflow-hidden">
+                  <img src="/vasudha-logo.png" alt="VASUDHA Logo" className="w-full h-full object-contain" />
                 </div>
               </div>
               <p className="text-accent font-medium mb-6">Government Ministry Problem Statement</p>
@@ -90,20 +86,22 @@ const Achievements = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="flex-1 glass-panel rounded-2xl p-8 md:p-10 relative overflow-hidden group hover:border-primary/50 transition-colors"
           >
-            <div className="absolute top-0 right-0 p-8 opacity-10 group-hover:opacity-20 transition-opacity">
-              <Award size={120} className="text-primary" />
-            </div>
-            
             <div className="relative z-10">
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/20 text-primary text-sm font-medium mb-6 border border-primary/30">
-                <CheckCircle2 size={16} />
-                Published Patent
+              <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-2">
+                <div>
+                  <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/20 text-primary text-sm font-medium mb-4 border border-primary/30">
+                    <CheckCircle2 size={16} />
+                    Published Patent
+                  </div>
+                  <h3 className="text-2xl md:text-3xl font-bold text-white leading-tight">
+                    A Smart System to Prioritize Lanes to Manage Traffic at Intersection
+                  </h3>
+                </div>
+                <div className="h-24 sm:h-32 w-56 sm:w-72 bg-white rounded-xl border border-white/10 p-2 flex items-center justify-center shrink-0 shadow-lg hidden sm:flex overflow-hidden">
+                  <img src="/patent-logo.png" alt="Patent Logo" className="w-full h-full object-contain" />
+                </div>
               </div>
-              
-              <h3 className="text-2xl md:text-3xl font-bold text-white mb-2 leading-tight">
-                A Smart System to Prioritize Lanes to Manage Traffic at Intersection
-              </h3>
-              <p className="text-accent font-medium mb-6">Indian Patent Office · Government of India</p>
+              <p className="text-accent font-medium mb-6 mt-2">Indian Patent Office · Government of India</p>
               
               <p className="text-gray-300 leading-relaxed mb-8 max-w-lg">
                 An AI-driven, real-time computer vision system for dynamic lane prioritization at traffic intersections.
