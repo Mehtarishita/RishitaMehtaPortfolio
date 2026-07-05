@@ -66,7 +66,7 @@ const Projects = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: idx * 0.1 }}
-              className="glass-panel rounded-2xl overflow-hidden group cursor-pointer hover:border-primary/30 hover:-translate-y-2 transition-all duration-300"
+              className="glass-panel flex flex-col rounded-2xl overflow-hidden group cursor-pointer hover:border-primary/30 hover:-translate-y-2 transition-all duration-300 h-full"
               onClick={() => setSelectedProject(project)}
             >
               <div className="h-48 bg-white/5 relative overflow-hidden border-b border-white/10 flex items-center justify-center">
@@ -82,7 +82,7 @@ const Projects = () => {
                 </div>
               </div>
               
-              <div className="p-6">
+              <div className="p-6 flex flex-col flex-grow">
                 <h3 className="text-xl font-bold text-white mb-2 group-hover:text-primary transition-colors">{project.title}</h3>
                 <p className="text-gray-400 text-sm mb-4 line-clamp-2">{project.shortDescription}</p>
                 
@@ -99,7 +99,7 @@ const Projects = () => {
                   )}
                 </div>
 
-                <div className="flex items-center gap-3">
+                <div className="flex items-center gap-3 mt-auto">
                   {project.githubUrl && (
                     <Button 
                       variant="outline" 
