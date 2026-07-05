@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Award, Trophy, Code, FileBadge, CheckCircle2 } from 'lucide-react';
+import { Award, Trophy, Code, FileBadge, CheckCircle2, ExternalLink } from 'lucide-react';
 
 const Achievements = () => {
   return (
@@ -79,9 +79,16 @@ const Achievements = () => {
                 ))}
               </div>
 
-              {/* [TO ADD LATER — photo + certificate image] */}
-              <div className="w-full h-24 rounded-lg bg-white/5 border border-white/10 border-dashed flex items-center justify-center text-gray-500 text-sm">
-                Media Placeholder (Photo + Certificate)
+              <div className="mt-4">
+                <a 
+                  href="https://www.linkedin.com/posts/rishitamehta29_sih2025-smartindiahackathon-teamgati-ugcPost-7404973057649369089-NH6n/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEuGxWEB7cMuUr7wXox0zvl0yTWyrdY2YJA"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 px-4 py-2 bg-secondary/10 hover:bg-secondary/20 text-secondary border border-secondary/30 rounded-lg transition-colors font-medium text-sm"
+                >
+                  <ExternalLink size={16} />
+                  View Post
+                </a>
               </div>
             </div>
           </motion.div>
