@@ -102,12 +102,27 @@ const Experience = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: idx * 0.1 }}
-                className="glass p-5 rounded-xl border-l-4 border-l-secondary hover:-translate-y-1 transition-transform"
+                className={`glass p-5 rounded-xl border-l-4 hover:-translate-y-1 transition-all duration-300 ${
+                  (item as any).highlight 
+                    ? 'border-l-primary bg-primary/5 shadow-[0_0_15px_rgba(124,58,237,0.15)]' 
+                    : 'border-l-secondary'
+                }`}
               >
                 <h4 className="font-semibold text-white mb-2">{item.title}</h4>
-                <a href={item.certificateUrl || '#'} className="text-xs text-secondary hover:text-white transition-colors flex items-center gap-1 opacity-60 hover:opacity-100">
-                  View Certificate <ExternalLink size={12} />
-                </a>
+                {(item as any).tags && (
+                  <div className="flex flex-wrap gap-2 mb-3">
+                    {(item as any).tags.map((tag: string) => (
+                      <span key={tag} className="px-2 py-0.5 rounded bg-white/5 border border-white/10 text-gray-300 text-[10px] uppercase tracking-wider">
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+                )}
+                {(item as any).certificateUrl && (
+                  <a href={(item as any).certificateUrl} className="text-xs text-primary hover:text-white transition-colors flex items-center gap-1 opacity-80 hover:opacity-100 font-medium">
+                    View Certificate <ExternalLink size={12} />
+                  </a>
+                )}
               </motion.div>
             ))}
           </div>
