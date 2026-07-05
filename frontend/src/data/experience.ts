@@ -44,7 +44,8 @@ export const experiences: Experience[] = [
     type: "Part-time",
     location: "Remote",
     description: "Promoted the tech fest events on campus and managed student registrations.",
-    techStack: ["Marketing", "Communication", "Leadership"]
+    techStack: ["Marketing", "Communication", "Leadership"],
+    certificateUrl: "/tryst-completion-letter.png" // Add your TRYST completion letter to frontend/public/tryst-completion-letter.png
   },
   {
     id: "blockchain-club",
@@ -53,12 +54,12 @@ export const experiences: Experience[] = [
     duration: "Jul 2024 – Present",
     type: "Leadership",
     location: "Campus",
-    description: "", // [TO ADD LATER]
-    techStack: ["Leadership", "Community Management"], // [TO ADD LATER]
-    promotionUrl: "/blockchain-promotion.pdf", // Add your Letter of Promotion to frontend/public/blockchain-promotion.pdf
-    appreciationUrl: "/blockchain-appreciation.pdf", // Add your Letter of Appreciation to frontend/public/blockchain-appreciation.pdf
-    lorUrl: "", // [TO ADD LATER]
-    certificateUrl: "" // [TO ADD LATER]
+    description: "Social Media Lead (Oct 2025 - Present) • Core Member (Jul 2024 - Oct 2025)\nResponsible for leading social and outreach initiatives, managing the creative team, and building engaging content.",
+    techStack: ["Leadership", "Social Media Marketing", "Community Management"],
+    promotionUrl: "/blockchain-promotion.pdf",
+    appreciationUrl: "/blockchain-appreciation.pdf",
+    lorUrl: "",
+    certificateUrl: ""
   },
   {
     id: "startup-club",
