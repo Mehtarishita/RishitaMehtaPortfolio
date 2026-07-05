@@ -79,7 +79,7 @@ const Achievements = () => {
                 ))}
               </div>
 
-              <div className="mt-4">
+              <div className="mt-4 flex flex-wrap gap-3">
                 <a 
                   href="https://www.linkedin.com/posts/rishitamehta29_sih2025-smartindiahackathon-teamgati-ugcPost-7404973057649369089-NH6n/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEuGxWEB7cMuUr7wXox0zvl0yTWyrdY2YJA"
                   target="_blank"
@@ -88,6 +88,15 @@ const Achievements = () => {
                 >
                   <ExternalLink size={16} />
                   View Post
+                </a>
+                <a 
+                  href="/sih-certificate.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 hover:bg-primary/20 text-primary border border-primary/30 rounded-lg transition-colors font-medium text-sm"
+                >
+                  <Award size={16} />
+                  View Certificate
                 </a>
               </div>
             </div>
