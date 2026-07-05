@@ -9,19 +9,24 @@ const contactSchema = z.object({
   message: z.string().min(10),
 });
 
+import mongoose from 'mongoose';
+
 export const submitContactForm = async (req, res) => {
   try {
     // 1. Validate request body
     const validatedData = contactSchema.parse(req.body);
     const { name, email, subject, message } = validatedData;
 
-    // 2. Save to database
-    const newMessage = await ContactMessage.create({
-      name,
-      email,
-      subject,
-      message,
-    });
+    // 2. Save to database (only if connected)
+    let newMessage = null;
+    if (mongoose.connection.readyState === 1) {
+      newMessage = await ContactMessage.create({
+        name,
+        email,
+        subject,
+        message,
+      });
+    }
 
     // 3. Send Email Notification
     if (process.env.EMAIL_USER && process.env.EMAIL_PASS) {
