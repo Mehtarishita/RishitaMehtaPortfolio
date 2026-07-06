@@ -11,7 +11,7 @@ const eduData = [
   },
   {
     id: 2,
-    institution: "SVGMS",
+    institution: "Swami Vivekanand Model School, Barisadri",
     degree: "Class XII (Higher Secondary)",
     board: "CBSE",
     score: "81%",
@@ -19,7 +19,7 @@ const eduData = [
   },
   {
     id: 3,
-    institution: "SVGMS",
+    institution: "Swami Vivekanand Model School, Barisadri",
     degree: "Class X (Secondary)",
     board: "CBSE",
     score: "93.60%",

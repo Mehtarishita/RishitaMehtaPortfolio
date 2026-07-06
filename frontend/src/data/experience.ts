@@ -76,22 +76,22 @@ export const experiences: Experience[] = [
   {
     id: "gssoc",
     role: "Open Source Contributor",
-    organization: "GirlScript Summer of Code",
-    duration: "Sep 2024 – Nov 2024",
+    organization: "GirlScript Summer of Code (GSSoC)",
+    duration: "Oct 2024 – Nov 2024",
     type: "Open Source",
     location: "Remote",
-    description: "Contributed to various open source projects, resolving issues and adding new features.",
-    techStack: ["Git", "GitHub", "Open Source"]
+    description: "• Contributed to multiple frontend and full-stack open-source repositories using React.js, resolving issues and improving code quality and technical documentation\n• Collaborated with global open-source contributors through Git workflows, participating in code reviews and maintaining high-quality project standards.",
+    techStack: ["React.js", "Git", "GitHub", "Open Source"]
   },
   {
     id: "devplex",
     role: "SDE Intern",
-    organization: "DevPlex",
+    organization: "Devplex AI",
     duration: "Nov 2025 – Feb 2026",
     type: "Internship",
     location: "Remote",
-    description: "Built and optimized production-facing frontend features. Collaborated with stakeholders to deploy improvements and contributed to workflow enhancements within cross-functional strategic initiatives.",
-    techStack: [], // [TO ADD LATER]
+    description: "• Built and optimized production-facing frontend features, working directly with product & marketing stakeholders to turn requirements into deployed improvements.\n• Contributed to workflow & platform improvements as part of cross-functional strategic initiatives, adapting quickly to changing priorities.",
+    techStack: ["React.js", "Frontend Development"],
     certificateUrl: "/devplex-certificate.pdf" // Add your DevPlex certificate PDF to frontend/public/devplex-certificate.pdf
   }
 ];

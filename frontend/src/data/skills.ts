@@ -15,7 +15,7 @@ import {
   SiGit,
   SiGithub,
 } from 'react-icons/si';
-import { FaJava, FaCss3Alt } from 'react-icons/fa';
+import { FaJava, FaCss3Alt, FaAws } from 'react-icons/fa';
 import {
   Database,
   Code,
@@ -91,7 +91,7 @@ export const skillCategories: SkillCategory[] = [
     skills: [
       { name: "System Design", icon: Workflow },
       { name: "Generative AI", icon: Brain },
-      { name: "Cloud Computing", icon: Cloud },
+      { name: "AWS (EC2, S3, IAM)", icon: FaAws },
     ]
   },
   {

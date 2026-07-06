@@ -96,7 +96,7 @@ const Hero = () => {
             transition={{ delay: 0.5 }}
             className="text-gray-400 text-base md:text-lg max-w-2xl leading-relaxed mt-4"
           >
-            Building scalable software, solving real-world problems, and turning ideas into impactful digital products.
+            Aspiring Software Engineer with hands-on project experience in full-stack development and AI/ML. Published Indian Patent Holder and Smart India Hackathon 2025 National Runner-Up.
           </motion.p>
         </div>
 

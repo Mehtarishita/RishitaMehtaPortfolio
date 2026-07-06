@@ -36,7 +36,7 @@ const About = () => {
               <div>
                 <h3 className="text-xl font-semibold text-white mb-3">Career Objective</h3>
                 <p className="italic text-gray-400 bg-white/5 p-4 rounded-xl border border-white/10">
-                  Seeking a Software Engineering role where I can apply my full-stack development and AI/ML foundations to build real, scalable products while growing into system design, cloud infrastructure, and large-scale engineering practices.
+                  Aspiring Software Engineer with hands-on project experience in full-stack development and AI/ML. Published Indian Patent Holder and Smart India Hackathon 2025 National Runner-Up, with a strong foundation in Data Structures & Algorithms, Object-Oriented Programming, and Database Management Systems.
                 </p>
               </div>
             </div>
