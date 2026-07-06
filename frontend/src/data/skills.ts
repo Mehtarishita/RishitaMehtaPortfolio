@@ -23,7 +23,6 @@ import {
   Network,
   Boxes,
   Brain,
-  Cloud,
   Layout,
   Workflow,
   Server,
