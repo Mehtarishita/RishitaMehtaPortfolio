@@ -22,10 +22,11 @@ const Modal = ({ isOpen, onClose, children }: ModalProps) => {
   }, [isOpen]);
 
   if (typeof document === 'undefined') return null;
+  const portalRoot = document.getElementById('root') || document.body;
 
-  return (
+  return createPortal(
     <AnimatePresence>
-      {isOpen && createPortal(
+      {isOpen && (
         <div className="fixed inset-0 z-[100] flex items-center justify-center p-4 md:p-6">
           <motion.div
             initial={{ opacity: 0 }}
@@ -53,10 +54,10 @@ const Modal = ({ isOpen, onClose, children }: ModalProps) => {
               </div>
             </div>
           </motion.div>
-        </div>,
-        document.body
+        </div>
       )}
-    </AnimatePresence>
+    </AnimatePresence>,
+    portalRoot
   );
 };
 
