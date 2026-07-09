@@ -19,7 +19,7 @@ if (process.env.MONGO_URI) {
 app.use(cors({
   origin: [
     'http://localhost:5173',
-    'https://rishitamehtaportfolio.vercel.app/',
+    'https://rishitamehtaportfolio.vercel.app',
     process.env.FRONTEND_URL
   ].filter(Boolean),
   credentials: true
