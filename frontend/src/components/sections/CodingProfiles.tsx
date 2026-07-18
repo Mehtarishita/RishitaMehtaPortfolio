@@ -1,6 +1,5 @@
 import { motion } from 'framer-motion';
 import { FaGithub } from 'react-icons/fa';
-import { SiLeetcode, SiGeeksforgeeks } from 'react-icons/si';
 
 const CodingProfiles = () => {
   const profiles = [
@@ -10,20 +9,6 @@ const CodingProfiles = () => {
       icon: <FaGithub size={32} />,
       color: "group-hover:text-white group-hover:border-white",
       bgHover: "hover:bg-white/5"
-    },
-    {
-      name: "LeetCode",
-      url: "https://leetcode.com/u/rishitaa_mehta/",
-      icon: <SiLeetcode size={32} />,
-      color: "group-hover:text-[#FFA116] group-hover:border-[#FFA116]",
-      bgHover: "hover:bg-[#FFA116]/5"
-    },
-    {
-      name: "GeeksforGeeks",
-      url: "https://www.geeksforgeeks.org/profile/rishitamm033",
-      icon: <SiGeeksforgeeks size={32} />,
-      color: "group-hover:text-[#2F8D46] group-hover:border-[#2F8D46]",
-      bgHover: "hover:bg-[#2F8D46]/5"
     }
   ];
 
@@ -31,7 +16,7 @@ const CodingProfiles = () => {
     <section id="coding-profiles" className="py-12 relative z-10">
       <div className="container mx-auto px-4 md:px-8">
         
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-4xl mx-auto">
+        <div className="flex justify-center w-full max-w-sm mx-auto">
           {profiles.map((profile, idx) => (
             <motion.a
               key={profile.name}
@@ -42,7 +27,7 @@ const CodingProfiles = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.4, delay: idx * 0.1 }}
-              className={`glass p-6 flex flex-col items-center justify-center gap-4 rounded-2xl group transition-all duration-300 border border-white/5 ${profile.bgHover}`}
+              className={`glass w-full p-6 flex flex-col items-center justify-center gap-4 rounded-2xl group transition-all duration-300 border border-white/5 ${profile.bgHover}`}
             >
               <div className={`text-gray-400 transition-colors duration-300 ${profile.color.split(' ')[0]}`}>
                 {profile.icon}
